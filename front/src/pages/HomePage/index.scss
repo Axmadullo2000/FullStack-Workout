@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+
+@import "../../scss/_variables";
+
+body {
+	width: 100%;
+	overflow-x: hidden;
+	background: $lightBrown;
+}
+
+.homePage {
+	position: relative;
+	max-width: 750px;
+	margin: auto;
+}
+
+.homepage_background {
+	width: 100%;
+}
+
+.homepage_center {
+	position: absolute;
+	bottom: 15%;
+	left: 50%;
+	transform: translateX(-50%);
+	button {
+		padding: 19px 49px;
+		border-radius: 10px;
+		border: 1px solid $accent;
+		background: $brown;
+		color: $white;
+		cursor: pointer;
+		font-size: 24px;
+		margin-bottom: 36px;
+	}
+
+	div {
+		div {
+			display: flex;
+			justify-content: space-between;
+		}
+	}
+
+	p.homepage_title {
+		font-size: 36px;
+		font-family: $font;
+		color: $white;
+		text-shadow: 1px 1px 1px red;
+		line-height: 48px;
+		margin-bottom: 42px;
+	}
+
+	.homepage_body {
+		margin-left: 15px;
+	}
+
+	.counter {
+		display: flex;
+		justify-content: space-between;
+		th, td {
+			color: $lightWhite;
+			line-height: 32px;
+			font-size: 26px;
+			text-transform: capitalize;
+		}
+
+		td {
+			color: $white;
+		}
+	}
+}
